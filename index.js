@@ -137,7 +137,10 @@ console.log(ucetambolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
+
+console.log("3'ün katı olan sayıların toplamı:", ucebolunenlerintoplami);
+
 
 // 3d çözümü
 
