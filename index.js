@@ -109,18 +109,30 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
-
-// 3b çözümü:
-
-// En büyük sayıyı bulma
 const enBuyuk = Math.max(...sayilar);
 
 // En küçük sayıyı bulma
 const enKucuk = Math.min(...sayilar);
 
+// En büyük sayıyı bulma
 console.log("En büyük sayı:", enBuyuk);
 console.log("En küçük sayı:", enKucuk);
+
+
+// 3b çözümü:
+
+let ucetambolunenler = [];  // Boş bir dizi oluşturuyoruz
+
+sayilar.forEach((sayi) => {
+  if (sayi % 3 === 0) {    // Sayı 3'e tam bölünüyor mu kontrolü
+    ucetambolunenler.push(sayi);  // Tam bölünüyorsa diziye ekle
+  }
+});
+
+console.log(ucetambolunenler);
+
+
+
 
 
 // 3c çözümü:
