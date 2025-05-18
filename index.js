@@ -158,7 +158,29 @@ console.log("Küçükten büyüğe sıralanmış sayılar:", siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+// Tekrar sayılarını tutacak nesne
+const tekrarSayilari = {};
+
+// 1. Döngü: sayıları saymak
+sayilar.forEach(sayi => {
+  if (tekrarSayilari[sayi]) {
+    tekrarSayilari[sayi] += 1;
+  } else {
+    tekrarSayilari[sayi] = 1;
+  }
+});
+
+// 2. Döngü: tekrar eden sayıları string olarak dizimize eklemek
+tekraredensayilar = [];
+
+for (const sayi in tekrarSayilari) {
+  if (tekrarSayilari[sayi] > 1) {
+    tekraredensayilar.push(`${sayi} sayısı ${tekrarSayilari[sayi]} kere tekrar edilmiştir`);
+  }
+}
+
+console.log("Tekrar eden sayılar ve adetleri:", tekraredensayilar);
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
