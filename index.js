@@ -113,7 +113,15 @@ let ucetambolunenler,
 
 // 3b çözümü:
 
-/* kodlar buraya */
+// En büyük sayıyı bulma
+const enBuyuk = Math.max(...sayilar);
+
+// En küçük sayıyı bulma
+const enKucuk = Math.min(...sayilar);
+
+console.log("En büyük sayı:", enBuyuk);
+console.log("En küçük sayı:", enKucuk);
+
 
 // 3c çözümü:
 
