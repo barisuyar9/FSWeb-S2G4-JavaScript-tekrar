@@ -53,9 +53,13 @@ console.log("Karenin alanı (kenar=10):", KareninAlani(10));
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
 
-function CemberinCevresi(/* kodlar buraya */) {
-  /* kodlar buraya */
+const pii=3.14159;
+
+function CemberinCevresi(yaricap) {
+  return 2 * pii* yaricap;
 }
+
+console.log("Çemberin çevresi (yarıçap=5):", CemberinCevresi(5));
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -67,9 +71,12 @@ function CemberinCevresi(/* kodlar buraya */) {
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinAlani(yaricap, pi) {
+  return pi * Math.pow(yaricap, 2);
 }
+
+console.log("Çemberin alanı (yarıçap=3):", CemberinAlani(3, pi));
+
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
