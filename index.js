@@ -144,7 +144,10 @@ console.log("3'ün katı olan sayıların toplamı:", ucebolunenlerintoplami);
 
 // 3d çözümü
 
-/* kodlar buraya */
+besyuzdenkucuksayilar = sayilar.filter(sayi => sayi < 500);
+
+console.log("500'den küçük sayılar:", besyuzdenkucuksayilar);
+
 
 // 3e çözümü
 
